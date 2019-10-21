@@ -1,0 +1,11 @@
+{
+  "name": "mountain-travel-landing-page",
+  "version": "1.0.0",
+  "description": "it's a landing page for an imaginary webpage",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "reedlex98",
+  "license": "ISC"
+}
