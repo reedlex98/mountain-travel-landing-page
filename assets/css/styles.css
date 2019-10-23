@@ -63,6 +63,7 @@ nav ul li{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     animation: translateFromBottom 0.5s linear 1 forwards;
 }
 /* 
@@ -122,11 +123,11 @@ nav ul li{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
 
 .packages{
-    background-color: #fff;
+    background-color: #f7f7f7;
 }
 
 .text-about{
@@ -140,35 +141,57 @@ nav ul li{
     width: 150px;
     height: 2px;
     border: none;
-    background-color: rgb(50, 150, 255)
+    background-color: rgb(50, 150, 255);
+    margin-top: 45px;
 }
 
 .text-about h2{
     font-size: 2em;
 }
 
-.text-about p , .destination-about h2{
-    color: #505050;
-    margin-bottom: 45px;
-}
-
 .grid{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 95vw;
+    width: 85vw;
     justify-content: center;
 }
+ul.grid{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 .grid img{
+    width: 100%;
+    height: 100%;
+}
+.grid li{
     margin: 20px;
-    max-height: 300px
+    height: 300px;
 }
 .grid .rectangle-image{
     flex-basis: 50%;
+    flex-grow: 1;
 }
 
 .grid .square-image{
     flex-basis: 30%;
+    flex-grow: 1;
+}
+
+.package {
+    flex-basis: 300px;
+    text-align: center;
+    margin: auto 30px;
+}
+
+.package h3, .package p{
+    color: #505050;
+} 
+
+.package i{
+    font-size: 3em;
+    color: rgb(50, 150, 255);
 }
 
 /* ------------- */
@@ -178,29 +201,35 @@ nav ul li{
 /* Responsivity */
 
 @media screen and (max-width: 950px){
-    .destination-gallery{
+    .grid{
         display: flex;
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
     }
-    .destination-gallery .rectangle-image, .destination-gallery .square-image{
-        flex-basis: 50px;
+    .grid .rectangle-image, .grid .square-image{
+        flex-basis: 30%;
         flex-grow: 1;
-        height: 150px;
+        height: 300px;
 
     }
 }
 
 @media screen and (max-width: 850px){
-    .destination-gallery{
+    .grid{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .destination-gallery .rectangle-image, .destination-gallery .square-image{
-        flex-basis: 50px;
-        width: 80%;
+    .grid .rectangle-image, .grid .square-image{
+        flex-basis: 200px;
+        width: 65%;
+    }
+}
+
+@media screen and (max-height: 700px){
+    .hero{
+        margin-top: 10vh;
     }
 }
 
