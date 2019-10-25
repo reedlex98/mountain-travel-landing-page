@@ -117,7 +117,7 @@ nav ul li{
 
 /* Destination and Packages sections*/
 
-.destinations, .packages, .testimonials, .newsletter{
+.destinations, .packages, .testimonials, .newsletter, footer{
     padding: 125px 50px;
     display: flex;
     flex-direction: column;
@@ -249,6 +249,34 @@ ul.grid{
 
 /* ------------- */
 
+/* FOOTER */
+
+footer{
+    background-color: #414a4f;
+    padding: 50px;
+}
+footer ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+footer ul li a{
+    color: #f0f0f0;
+    font-size: 2em;
+    margin: auto 10px;
+}
+footer small a{
+    color: lightgreen !important;
+}
+footer small{
+    color: #f0f0f0;
+    font-size: .8em;
+    text-transform: uppercase;
+    max-width: 300px;
+    text-align: justify
+}
+/* ------------- */
 
 
 /* Responsivity */
