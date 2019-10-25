@@ -80,7 +80,7 @@ nav ul li{
     font-size: 3em;
 }
 
-.hero button{
+.button{
     color: white;
     border: none;
     background-color: rgba(50, 50, 150);
@@ -117,7 +117,7 @@ nav ul li{
 
 /* Destination and Packages sections*/
 
-.destinations, .packages, .testimonials{
+.destinations, .packages, .testimonials, .newsletter{
     padding: 125px 50px;
     display: flex;
     flex-direction: column;
@@ -126,7 +126,7 @@ nav ul li{
     background-color: #fff;
 }
 
-.packages{
+.packages, .newsletter{
     background-color: #f7f7f7;
 }
 
@@ -141,7 +141,7 @@ nav ul li{
     width: 150px;
     height: 2px;
     border: none;
-    background-color: rgb(50, 150, 255);
+    background-color: rgba(50, 50, 150);
     margin-top: 45px;
 }
 
@@ -191,7 +191,7 @@ ul.grid{
 
 .package i{
     font-size: 3em;
-    color: rgb(50, 150, 255);
+    color: rgba(50, 50, 150);
 }
 
 /* ------------- */
@@ -223,6 +223,28 @@ ul.grid{
 
 .testimonial span{
     font-size: 1.15em;
+}
+
+/* ------------- */
+
+
+/* NEWSLETTER */
+
+.newsletter-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75vw;
+}
+.newsletter-input{
+    flex-basis: 40vw;
+    padding: 12.5px 20px;
+    font-size: 1.25em
+}
+.newsletter-input, .button.submit{
+    margin-bottom: 25px;
 }
 
 /* ------------- */
